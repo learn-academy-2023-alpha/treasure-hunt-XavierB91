@@ -23,11 +23,15 @@ Branch:grid
 
 
 
-- As a user, when I click on one of the question marks an alert appears with the index position of that question mark in the array.
+$ As a user, when I click on one of the question marks an alert appears with the index position of that question mark in the array.
 - Setup an onclick on the square component div
 -the Onclick will trigger a handleclick function that will have an alert with the index of the square that is being clicked
 -shows props inside of div in square 
 -Center and resize question mark
+-will need to pass index as props to Square
+- To gain access to the index being clicked, we need to pass index into a function on App.js from Square
+
+
 - As a user, when I click on one of the question marks instead of the alert the question mark turns into a tree emoji.
 - As a user, if I select the winning square the question mark will become a treasure emoji and if I select the losing square the question mark will become a bomb emoji.
 - As a user, I can click on a “Play Again” button that will restart the game.
