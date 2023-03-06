@@ -13,6 +13,10 @@ const App = () => {
     "?",
     "?"
   ])
+  
+  const handleGamePlay = (index) => {
+    alert (index)
+  }
 
   return (
     <>
@@ -23,7 +27,8 @@ const App = () => {
           <Square 
           value={value} 
           key={index}
-          />
+          index={index}
+          handleGamePlay={handleGamePlay}/>
         )
       })}
       </div>
