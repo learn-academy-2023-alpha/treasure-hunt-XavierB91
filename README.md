@@ -20,15 +20,17 @@ Branch:grid
 -center and resize question mark
 
 
-
-
-
-- As a user, when I click on one of the question marks an alert appears with the index position of that question mark in the array.
+$ As a user, when I click on one of the question marks an alert appears with the index position of that question mark in the array.
 - Setup an onclick on the square component div
 -the Onclick will trigger a handleclick function that will have an alert with the index of the square that is being clicked
 -shows props inside of div in square 
 -Center and resize question mark
+
 - As a user, when I click on one of the question marks instead of the alert the question mark turns into a tree emoji.
+-branch : tree-emoji
+-create an copy of our state array
+-index allows us to use bracket notation to update the element  that was clicked to a tree emoji
+-update state  using setBoard method with the modified copied array
 - As a user, if I select the winning square the question mark will become a treasure emoji and if I select the losing square the question mark will become a bomb emoji.
 - As a user, I can click on a “Play Again” button that will restart the game.
 - As a user, I can see a counter that shows how many guesses I have left. The counter starts at five and decrements one every time I click on a square that is not the treasure nor the bomb.

@@ -13,6 +13,13 @@ const App = () => {
     "?",
     "?"
   ])
+  const handleGamePlay = (index)=> {
+    // alert (index)
+    let updatedBoard = [...board]
+    // emoji keyboard : cmd + ctrl + space
+    updatedBoard[index]= "🌴"
+    setBoard(updatedBoard)
+  }
 
   return (
     <>
@@ -23,6 +30,8 @@ const App = () => {
           <Square 
           value={value} 
           key={index}
+          index={index}
+          handleGamePlay={handleGamePlay}
           />
         )
       })}
