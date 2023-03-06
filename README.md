@@ -10,7 +10,7 @@ As a developer, you are tasked with creating a treasure hunt game. The user will
 ### 📚 User Stories
 <!-- each user stories is it's own branch and seperate pr -->
 
-- As a user, I can see a page with a three by three grid board game with a question mark in each square.
+$ As a user, I can see a page with a three by three grid board game with a question mark in each square.
 Branch:grid
 -Iterate on board state variable to display square component for each element
 -Use styling to set up grid
@@ -18,7 +18,16 @@ Branch:grid
 - Passed the current value of the iterated board into square props
 -show props inside of div in Square
 -center and resize question mark
+
+
+
+
+
 - As a user, when I click on one of the question marks an alert appears with the index position of that question mark in the array.
+- Setup an onclick on the square component div
+-the Onclick will trigger a handleclick function that will have an alert with the index of the square that is being clicked
+-shows props inside of div in square 
+-Center and resize question mark
 - As a user, when I click on one of the question marks instead of the alert the question mark turns into a tree emoji.
 - As a user, if I select the winning square the question mark will become a treasure emoji and if I select the losing square the question mark will become a bomb emoji.
 - As a user, I can click on a “Play Again” button that will restart the game.
