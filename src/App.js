@@ -19,6 +19,10 @@ const App = () => {
     // emoji keyboard : cmd + ctrl + space
     updatedBoard[index]= "🌴"
     setBoard(updatedBoard)
+  
+  const handleGamePlay = (index) => {
+    alert (index)
+
   }
 
   return (
@@ -31,8 +35,8 @@ const App = () => {
           value={value} 
           key={index}
           index={index}
-          handleGamePlay={handleGamePlay}
-          />
+          handleGamePlay={handleGamePlay}/>
+
         )
       })}
       </div>

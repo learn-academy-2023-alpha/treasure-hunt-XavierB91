@@ -25,6 +25,9 @@ $ As a user, when I click on one of the question marks an alert appears with the
 -the Onclick will trigger a handleclick function that will have an alert with the index of the square that is being clicked
 -shows props inside of div in square 
 -Center and resize question mark
+-will need to pass index as props to Square
+- To gain access to the index being clicked, we need to pass index into a function on App.js from Square
+
 
 - As a user, when I click on one of the question marks instead of the alert the question mark turns into a tree emoji.
 -branch : tree-emoji
