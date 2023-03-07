@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import "./App.css"
 import Square from "./components/Square"
+
 const App = () => {
   const [board, setBoard] = useState([
     "?",
@@ -14,9 +15,10 @@ const App = () => {
     "?"
   ])
 
+
   const [treasureLocation, setTreasurelocation]= useState(Math.floor(Math.random()* board.length))
   const [bombLocation, setBombLocation]= useState(Math.floor(Math.random()* board.length))
-  
+
   const handleGamePlay = (index) => {
     // alert (index)
     let updatedBoard= [...board]
@@ -30,17 +32,15 @@ const App = () => {
     updatedBoard [index] = "🎋"
     setBoard(updatedBoard)
 
-  const handleGamePlay = (index)=> {
-    // alert (index)
-    let updatedBoard = [...board]
-    // emoji keyboard : cmd + ctrl + space
-    updatedBoard[index]= "🌴"
-    setBoard(updatedBoard)
-  
-  const handleGamePlay = (index) => {
-    alert (index)
-
-
+  // const handleGamePlay = (index)=> {
+  //   // alert (index)
+  //   let updatedBoard = [...board]
+  //   // emoji keyboard : cmd + ctrl + space
+  //   updatedBoard[index]= "🌴"
+  //   setBoard(updatedBoard)
+  // }
+  // const handleGamePlay = (index) => {
+  //   alert (index)
   }
   }
     return (
@@ -57,9 +57,11 @@ const App = () => {
 
         )
       })}
+       <button id="reset-button" className="btn btn-lg btn-primary btn-block">reset</button>
       </div>
     </>
   )
 }
+  
 
-export default App
+export default App 

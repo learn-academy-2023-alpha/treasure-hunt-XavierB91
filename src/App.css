@@ -17,3 +17,7 @@ h1 {
   margin:0 auto ;
 
 }
+.reset-button {
+  margin: 15px auto 0;
+  width: 370px;
+}
