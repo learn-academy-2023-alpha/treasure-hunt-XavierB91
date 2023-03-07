@@ -13,22 +13,24 @@ const App = () => {
     "?",
     "?"
   ])
-  const [treasureLocation, setTreasurelocation]= useState(math.floor(Math.random()* board.length))
-  const [bombLocation, setBombLocation]= useState(math.floor(Math.random()* board.length))
+  const [treasureLocation, setTreasurelocation]= useState(Math.floor(Math.random()* board.length))
+  const [bombLocation, setBombLocation]= useState(Math.floor(Math.random()* board.length))
   
   const handleGamePlay = (index) => {
     // alert (index)
-    let updatedBoard=[...board]
+    let updatedBoard= [...board]
     if(index === treasureLocation) {
-      updatedBoard(index)= "🎯"
+      updatedBoard[index]= "🎯"
       setBoard(updatedBoard)
-      
-    } else {}
-    updatedBoard(index)= "🌴"
+      } else if (index === bombLocation) {
+    updatedBoard[index]= "💣"
+    setBoard(updatedBoard)
+  } else {
+    updatedBoard [index] = "🎋"
     setBoard(updatedBoard)
   }
-
-  return (
+  }
+    return (
     <>
       <h1>Treasure Hunt Game</h1>
       <div className="gameboard">
