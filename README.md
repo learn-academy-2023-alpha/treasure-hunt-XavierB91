@@ -20,9 +20,6 @@ Branch:grid
 -center and resize question mark
 
 
-
-
-
 $ As a user, when I click on one of the question marks an alert appears with the index position of that question mark in the array.
 - Setup an onclick on the square component div
 -the Onclick will trigger a handleclick function that will have an alert with the index of the square that is being clicked
@@ -33,6 +30,10 @@ $ As a user, when I click on one of the question marks an alert appears with the
 
 
 - As a user, when I click on one of the question marks instead of the alert the question mark turns into a tree emoji.
+-branch : tree-emoji
+-create an copy of our state array
+-index allows us to use bracket notation to update the element  that was clicked to a tree emoji
+-update state  using setBoard method with the modified copied array
 - As a user, if I select the winning square the question mark will become a treasure emoji and if I select the losing square the question mark will become a bomb emoji.
 -create a branch called 'winner-loser' 
 -Randomize winning box index and store in a state variable

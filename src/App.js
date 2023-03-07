@@ -13,6 +13,7 @@ const App = () => {
     "?",
     "?"
   ])
+
   const [treasureLocation, setTreasurelocation]= useState(Math.floor(Math.random()* board.length))
   const [bombLocation, setBombLocation]= useState(Math.floor(Math.random()* board.length))
   
@@ -28,6 +29,18 @@ const App = () => {
   } else {
     updatedBoard [index] = "🎋"
     setBoard(updatedBoard)
+
+  const handleGamePlay = (index)=> {
+    // alert (index)
+    let updatedBoard = [...board]
+    // emoji keyboard : cmd + ctrl + space
+    updatedBoard[index]= "🌴"
+    setBoard(updatedBoard)
+  
+  const handleGamePlay = (index) => {
+    alert (index)
+
+
   }
   }
     return (
@@ -41,6 +54,7 @@ const App = () => {
           key={index}
           index={index}
           handleGamePlay={handleGamePlay}/>
+
         )
       })}
       </div>
